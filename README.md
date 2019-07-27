@@ -1,4 +1,4 @@
-## how to deploy the hexo in different compute
+## how to migrate the hexo in different compute
 
 ### 1. install node.js
 
