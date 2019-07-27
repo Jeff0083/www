@@ -1,12 +1,12 @@
 ## how to deploy the hexo in different compute
 
-###1. install node.js
+### 1. install node.js
 
-###2. install hexo
+### 2. install hexo
 
-###3. git clone blog_src repo
+### 3. git clone blog_src repo
 
-###4. exec the follow the commands
+### 4. exec the follow the commands
 
 	* npm install .
 	
@@ -17,9 +17,9 @@
 	* npm install hexo-generator-sitemap --save
 
 
-###5. add ssh pub key && write your blogs
+### 5. add ssh pub key && write your blogs
 
-###6. hexo g d deploy the blog 
+### 6. hexo g d deploy the blog 
 
 links:
 	* https://blog.csdn.net/Julialove102123/article/details/88855256
