@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="kernel，sar,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -80,16 +80,15 @@
 
 
 <meta name="description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
-<meta name="keywords" content="kernel，sar">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用sar工具分析kernel">
+<meta property="og:title" content="Joey的小草屋">
 <meta property="og:url" content="http://yoursite.com/2019/07/29/kernel-sar/index.html">
 <meta property="og:site_name" content="Joey的小草屋">
 <meta property="og:description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-29T11:20:09.182Z">
+<meta property="og:updated_time" content="2019-07-29T11:25:55.301Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用sar工具分析kernel">
+<meta name="twitter:title" content="Joey的小草屋">
 <meta name="twitter:description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
 
 
@@ -126,7 +125,7 @@
 
 
 
-  <title>使用sar工具分析kernel | Joey的小草屋</title>
+  <title> | Joey的小草屋</title>
   
 
 
@@ -311,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用sar工具分析kernel</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -323,7 +322,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T19:20:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T19:25:55+08:00">
                 2019-07-29
               </time>
             
@@ -333,28 +332,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/内核工具/" itemprop="url" rel="index">
-                    <span itemprop="name">内核工具</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -471,7 +448,7 @@
 <pre><code>00时00分01秒  pswpin/s pswpout/s
 00时05分01秒      0.00      0.00
 00时15分01秒      0.00      0.00
-00时25分01秒      0.00      0.00</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 查看内存的情况</span><br><span class="line">  </span><br><span class="line">  ` sar -B`</span><br><span class="line">  </span><br><span class="line">```  </span><br><span class="line">        •pgpgin ：系统每秒从磁盘置入的page（1000字节） system paged in from disk per second</span><br><span class="line">        •pgpgout：系统每秒置出磁盘的page（1000字节） system paged out to disk per second</span><br><span class="line">        •pgscank：系统每秒扫描的swap page（1000字节） Number of pages scanned by the kswapd daemon per second</span><br><span class="line">        •pgscand：系统每秒扫描的directy page（1000字节） Number of pages scanned directly per second</span><br><span class="line">        •pgsteal：系统每秒为满足系统要求的回收的缓存（pagecache和swapcache）（1000字节） Number of pages the system has reclaimed from cache (pagecache and swapcache) per second to satisfy its memory demands</span><br><span class="line">        •vmeff  ： Calculated as pgsteal / pgscan（pgscand+pgscank）回收率</span><br></pre></td></tr></table></figure>
+00时25分01秒      0.00      0.00</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 查看内存的情况			dsfasdf </span><br><span class="line">  </span><br><span class="line">  ` sar -B`</span><br><span class="line">  </span><br><span class="line">```  </span><br><span class="line">        •pgpgin ：系统每秒从磁盘置入的page（1000字节） system paged in from disk per second</span><br><span class="line">        •pgpgout：系统每秒置出磁盘的page（1000字节） system paged out to disk per second</span><br><span class="line">        •pgscank：系统每秒扫描的swap page（1000字节） Number of pages scanned by the kswapd daemon per second</span><br><span class="line">        •pgscand：系统每秒扫描的directy page（1000字节） Number of pages scanned directly per second</span><br><span class="line">        •pgsteal：系统每秒为满足系统要求的回收的缓存（pagecache和swapcache）（1000字节） Number of pages the system has reclaimed from cache (pagecache and swapcache) per second to satisfy its memory demands</span><br><span class="line">        •vmeff  ： Calculated as pgsteal / pgscan（pgscand+pgscank）回收率</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">        08时35分01秒  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff</span><br><span class="line">        13时15分01秒      0.41    122.04   3659.54      0.01   3587.59      5.31      1.99      5.32     72.98</span><br><span class="line">        13时25分01秒      0.00     78.42   2751.88      0.00   2671.17      0.00      0.00      0.00      0.00</span><br><span class="line">        13时35分01秒     13.66    214.42   5310.88      0.13   5383.70    190.40      0.00    136.98     71.94</span><br><span class="line">        13时45分01秒      7.33     82.70   3361.57      0.01   3336.64      0.00      0.00      0.00      0.00</span><br><span class="line">        13时55分01秒     38.54    272.99   6832.67      0.18   6735.06    221.14      0.00    170.69     77.19</span><br><span class="line">        14时05分01秒     91.70    103.20   3757.22      0.22   4418.68     68.53      0.00     39.40     57.49</span><br><span class="line">        14时15分01秒     25.21    123.22   4489.15      0.06   4958.97     59.77      5.88     47.79     72.79</span><br><span class="line">        14时25分01秒     48.40     65.09   3389.68      0.62   3779.18      0.00      0.00      0.00      0.00</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">* 查看IO的情况</span><br><span class="line">	</span><br><span class="line">    `sar -b`</span><br></pre></td></tr></table></figure>
 
@@ -489,7 +466,8 @@ bread/s
        Total amount of data read from the devices in blocks per second.  Blocks are equivalent to sectors and therefore have a size of 512 bytes.
 
 bwrtn/s
-       Total amount of data written to devices in blocks per second.</code></pre><pre><code></code></pre>
+       Total amount of data written to devices in blocks per second.</code></pre><p>```</p>
+
       
     </div>
     
@@ -503,12 +481,6 @@ bwrtn/s
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/kernel，sar/" rel="tag"># kernel，sar</a>
-          
-        </div>
       
 
       
@@ -593,25 +565,7 @@ bwrtn/s
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
             
 
           </nav>
