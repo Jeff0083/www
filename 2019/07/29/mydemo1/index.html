@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="kernel,sar,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Joey的小草屋">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="使用sar工具查看系统瓶颈安装sar工具及enable 安装sar工具   yum install sysstat  修改配置打开sar   1234vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用   ENABLED=&quot;true&quot; //打开sysstat的log      # Default settings for /etc/init.d/s">
+<meta name="keywords" content="kernel,sar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mydemo">
+<meta property="og:url" content="http://yoursite.com/2019/07/29/mydemo1/index.html">
 <meta property="og:site_name" content="Joey的小草屋">
+<meta property="og:description" content="使用sar工具查看系统瓶颈安装sar工具及enable 安装sar工具   yum install sysstat  修改配置打开sar   1234vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用   ENABLED=&quot;true&quot; //打开sysstat的log      # Default settings for /etc/init.d/s">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-29T12:43:10.280Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Joey的小草屋">
+<meta name="twitter:title" content="mydemo">
+<meta name="twitter:description" content="使用sar工具查看系统瓶颈安装sar工具及enable 安装sar工具   yum install sysstat  修改配置打开sar   1234vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用   ENABLED=&quot;true&quot; //打开sysstat的log      # Default settings for /etc/init.d/s">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/29/mydemo1/">
 
 
 
 
 
-  <title>Joey的小草屋</title>
+  <title>mydemo | Joey的小草屋</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>	
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -275,9 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -307,9 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/29/mydemo1/" itemprop="url">mydemo</a></h1>
+          <h1 class="post-title" itemprop="name headline">mydemo</h1>
         
 
         <div class="post-meta">
@@ -412,9 +414,7 @@
       
 
       
-        
-          
-            <h2 id="使用sar工具查看系统瓶颈"><a href="#使用sar工具查看系统瓶颈" class="headerlink" title="使用sar工具查看系统瓶颈"></a>使用sar工具查看系统瓶颈</h2><h3 id="安装sar工具及enable"><a href="#安装sar工具及enable" class="headerlink" title="安装sar工具及enable"></a>安装sar工具及enable</h3><ul>
+        <h2 id="使用sar工具查看系统瓶颈"><a href="#使用sar工具查看系统瓶颈" class="headerlink" title="使用sar工具查看系统瓶颈"></a>使用sar工具查看系统瓶颈</h2><h3 id="安装sar工具及enable"><a href="#安装sar工具及enable" class="headerlink" title="安装sar工具及enable"></a>安装sar工具及enable</h3><ul>
 <li><p>安装sar工具</p>
 <p>  <code>yum install sysstat</code></p>
 </li>
@@ -474,8 +474,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">tps</span><br><span class="line">       Total  number  <span class="keyword">of</span> transfers per second that were issued to physical devices.  A transfer is an I/O request to a physical device. Multiple logical requests can be combined into a single     </span><br><span class="line">       I/O request to the device.  A transfer is <span class="keyword">of</span> indeterminate size.</span><br><span class="line"></span><br><span class="line">rtps</span><br><span class="line">       Total number <span class="keyword">of</span> read requests per second issued to physical devices.</span><br><span class="line"></span><br><span class="line">wtps</span><br><span class="line">       Total number <span class="keyword">of</span> write requests per second issued to physical devices.</span><br><span class="line"></span><br><span class="line">bread/s</span><br><span class="line">       Total amount <span class="keyword">of</span> data read <span class="keyword">from</span> the devices <span class="keyword">in</span> blocks per second.  Blocks are equivalent to sectors and therefore have a size <span class="keyword">of</span> <span class="number">512</span> bytes.</span><br><span class="line"></span><br><span class="line">bwrtn/s</span><br><span class="line">       Total amount <span class="keyword">of</span> data written to devices <span class="keyword">in</span> blocks per second.</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -490,14 +488,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/kernel-sar/" rel="tag"># kernel,sar</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -507,10 +511,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -518,6 +523,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTYyMy8yMjEzNA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -538,8 +552,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -615,6 +638,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用sar工具查看系统瓶颈"><span class="nav-number">1.</span> <span class="nav-text">使用sar工具查看系统瓶颈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装sar工具及enable"><span class="nav-number">1.1.</span> <span class="nav-text">安装sar工具及enable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用sar工具"><span class="nav-number">1.2.</span> <span class="nav-text">使用sar工具</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -752,6 +791,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -780,6 +823,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
