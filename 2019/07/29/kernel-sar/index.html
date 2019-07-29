@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="kernel，sar,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Joey的小草屋">
-<meta property="og:url" content="http://yoursite.com/categories/搭建博客/index.html">
+<meta name="description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
+<meta name="keywords" content="kernel，sar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用sar工具分析kernel">
+<meta property="og:url" content="http://yoursite.com/2019/07/29/kernel-sar/index.html">
 <meta property="og:site_name" content="Joey的小草屋">
+<meta property="og:description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-29T11:20:09.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Joey的小草屋">
+<meta name="twitter:title" content="使用sar工具分析kernel">
+<meta name="twitter:description" content="##使用sar工具查看系统瓶颈 ###安装sar工具及enable  安装sar工具   yum install sysstat  修改配置打开sar 12345678    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用    ENABLED=&amp;quot;true&amp;quot; //打开sysstat的log       # Default s">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/搭建博客/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/29/kernel-sar/">
 
 
 
 
 
-  <title>分类: 搭建博客 | Joey的小草屋</title>
+  <title>使用sar工具分析kernel | Joey的小草屋</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>	
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -275,53 +280,258 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>搭建博客<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/kernel-sar/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joey">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://tva2.sinaimg.cn/crop.0.0.720.720.180/67e79979jw8efr1t87dn5j20k00k0dg1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Joey的小草屋">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/07/26/hello-world/" itemprop="url">
-              
-                <span itemprop="name">你好，Hexo</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">使用sar工具分析kernel</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-26T18:09:22+08:00" content="2019-07-26">
-          07-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T19:20:22+08:00">
+                2019-07-29
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/内核工具/" itemprop="url" rel="index">
+                    <span itemprop="name">内核工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <p>##使用sar工具查看系统瓶颈</p>
+<p>###安装sar工具及enable</p>
+<ul>
+<li><p>安装sar工具</p>
+<p>  <code>yum install sysstat</code></p>
+</li>
+<li><p>修改配置打开sar</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    vim /etc/default/sysstat //ubuntu、centos应该安装直接可以使用</span><br><span class="line">    ENABLED=&quot;true&quot; //打开sysstat的log   </span><br><span class="line">    # Default settings for /etc/init.d/sysstat, /etc/cron.d/sysstat</span><br><span class="line">    # and /etc/cron.daily/sysstat files</span><br><span class="line">    #</span><br><span class="line">```        </span><br><span class="line"></span><br><span class="line">* 查看crontab的内容</span><br></pre></td></tr></table></figure>
+
+<pre><code>root@localhost ~]# cat /etc/cron.d/sysstat
+# Run system activity accounting tool every 10 minutes
+*/10 * * * * root /usr/lib64/sa/sa1 1 1
+# 0 * * * * root /usr/lib64/sa/sa1 600 6 &amp;
+# Generate a daily summary of process accounting at 23:53
+53 23 * * * root /usr/lib64/sa/sa2 -A</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">###使用sar工具</span><br><span class="line"></span><br><span class="line">* 查看cpu使用率</span><br><span class="line"></span><br><span class="line">	`sar -u `</span><br></pre></td></tr></table></figure>
+
+<pre><code>Linux 4.18.0-25-generic (zjp)   2019年07月24日  _x86_64_        (4CPU)
+00时00分01秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
+00时05分01秒     all      6.90      0.01      3.31      0.62      0.00     89.16
+00时15分01秒     all      7.33      0.00      3.46      0.76      0.00     88.44 
+00时25分01秒     all      6.88      0.00      3.30      0.54      0.00     89.27
+00时35分01秒     all      6.91      0.00      3.31      0.55      0.00     89.23
+00时45分01秒     all      6.91      0.00      3.28      0.52      0.00     89.29
+00时55分01秒     all      6.92      0.00      3.26      0.48      0.00     89.35
+01时05分01秒     all      7.07      0.00      3.36      0.56      0.00     89.01
+01时15分01秒     all      7.42      0.00      3.42      0.55      0.00     88.61
+01时25分01秒     all      6.86      0.00      3.28      0.55      0.00     89.31</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 看平均负载情况</span><br><span class="line">	</span><br><span class="line">    `sar -q`</span><br><span class="line">    </span><br><span class="line">```    </span><br><span class="line">        • runq-sz：运行队列的长度（等待运行的进程数）</span><br><span class="line">        • plist-sz：进程列表中进程（processes）和线程（threads）的数量</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">00时00分01秒   runq-sz  plist-sz   ldavg-1   ldavg-5  ldavg-15   blocked</span><br><span class="line">00时05分01秒         0      1393      0.95      0.64      0.79         0</span><br><span class="line">00时15分01秒         0      1385      0.56      0.60      0.73         0</span><br><span class="line">00时25分01秒         0      1382      0.64      0.45      0.56         0</span><br><span class="line">00时35分01秒         2      1382      0.18      0.41      0.52         0</span><br><span class="line">00时45分01秒         0      1383      0.48      0.45      0.46         0</span><br><span class="line">00时55分01秒         0      1386      0.20      0.40      0.45         0</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li><p>查看内存负载</p>
+<p>  <code>sar -r</code></p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">		• kbmemfree：这个值和free命令中的free值基本一致,所以它不包括buffer和cache的空间.</span><br><span class="line">        • kbmemused：这个值和free命令中的used值基本一致,所以它包括buffer和cache的空间.</span><br><span class="line">        • %memused：物理内存使用率，这个值是kbmemused和内存总量(不包括swap)的一个百分比.</span><br><span class="line">        • kbbuffers和kbcached：这两个值就是free命令中的buffer和cache.</span><br><span class="line">        • kbcommit：保证当前系统所需要的内存,即为了确保不溢出而需要的内存(RAM+swap).</span><br><span class="line">        • %commit：这个值是kbcommit与内存总量(包括swap)的一个百分比.</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<pre><code>00时00分01秒 kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+00时05分01秒    309480   4421376  10045476     62.36    527648   4788684  25121556    137.98  11523384   3479648       684
+00时15分01秒    288948   4446896  10019880     62.20    532212   4818928  25079040    137.75  11514952   3498364      3236
+00时25分01秒    276680   4432124  10034676     62.29    532960   4815592  25109912    137.92  11529264   3495020       628
+00时35分01秒    271228   4427648  10039176     62.32    533760   4815756  25108224    137.91  11534788   3495208       500
+00时45分01秒    274180   4431408  10035484     62.30    534500   4815872  25116144    137.95  11531552   3495324       508
+00时55分01秒    244844   4402908  10064140     62.47    535212   4815844  25179352    138.30  11560284   3495296       712
+01时05分01秒    236672   4398960  10066640     62.49    536036   4819632  25187996    138.35  11565192   3497772       652
+01时15分01秒   1067352   5237928   9263644     57.51    536896   4793184  23676896    130.05  10816624   3453844       188
+01时25分01秒   1096936   5255868   9246896     57.40    537688   4779960  23681252    130.07  10800492   3440624       640</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 查看内存页面交换情况</span><br><span class="line">	</span><br><span class="line">    `sar -W`</span><br></pre></td></tr></table></figure>
+
+<pre><code>• pswpin/s：每秒系统换入的交换页面（swap page）数量
+• pswpout/s：每秒系统换出的交换页面（swap page）数量</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>00时00分01秒  pswpin/s pswpout/s
+00时05分01秒      0.00      0.00
+00时15分01秒      0.00      0.00
+00时25分01秒      0.00      0.00</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 查看内存的情况</span><br><span class="line">  </span><br><span class="line">  ` sar -B`</span><br><span class="line">  </span><br><span class="line">```  </span><br><span class="line">        •pgpgin ：系统每秒从磁盘置入的page（1000字节） system paged in from disk per second</span><br><span class="line">        •pgpgout：系统每秒置出磁盘的page（1000字节） system paged out to disk per second</span><br><span class="line">        •pgscank：系统每秒扫描的swap page（1000字节） Number of pages scanned by the kswapd daemon per second</span><br><span class="line">        •pgscand：系统每秒扫描的directy page（1000字节） Number of pages scanned directly per second</span><br><span class="line">        •pgsteal：系统每秒为满足系统要求的回收的缓存（pagecache和swapcache）（1000字节） Number of pages the system has reclaimed from cache (pagecache and swapcache) per second to satisfy its memory demands</span><br><span class="line">        •vmeff  ： Calculated as pgsteal / pgscan（pgscand+pgscank）回收率</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">        08时35分01秒  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff</span><br><span class="line">        13时15分01秒      0.41    122.04   3659.54      0.01   3587.59      5.31      1.99      5.32     72.98</span><br><span class="line">        13时25分01秒      0.00     78.42   2751.88      0.00   2671.17      0.00      0.00      0.00      0.00</span><br><span class="line">        13时35分01秒     13.66    214.42   5310.88      0.13   5383.70    190.40      0.00    136.98     71.94</span><br><span class="line">        13时45分01秒      7.33     82.70   3361.57      0.01   3336.64      0.00      0.00      0.00      0.00</span><br><span class="line">        13时55分01秒     38.54    272.99   6832.67      0.18   6735.06    221.14      0.00    170.69     77.19</span><br><span class="line">        14时05分01秒     91.70    103.20   3757.22      0.22   4418.68     68.53      0.00     39.40     57.49</span><br><span class="line">        14时15分01秒     25.21    123.22   4489.15      0.06   4958.97     59.77      5.88     47.79     72.79</span><br><span class="line">        14时25分01秒     48.40     65.09   3389.68      0.62   3779.18      0.00      0.00      0.00      0.00</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">* 查看IO的情况</span><br><span class="line">	</span><br><span class="line">    `sar -b`</span><br></pre></td></tr></table></figure>
+
+<pre><code>tps
+       Total  number  of transfers per second that were issued to physical devices.  A transfer is an I/O request to a physical device. Multiple logical requests can be combined into a single     
+       I/O request to the device.  A transfer is of indeterminate size.
+
+rtps
+       Total number of read requests per second issued to physical devices.
+
+wtps
+       Total number of write requests per second issued to physical devices.
+
+bread/s
+       Total amount of data read from the devices in blocks per second.  Blocks are equivalent to sectors and therefore have a size of 512 bytes.
+
+bwrtn/s
+       Total amount of data written to devices in blocks per second.</code></pre><pre><code></code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/kernel，sar/" rel="tag"># kernel，sar</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +539,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTYyMy8yMjEzNA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -563,6 +782,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -591,6 +814,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
